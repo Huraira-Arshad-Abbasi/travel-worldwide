@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #ff9a30;
+    --text-dark: #0a0a0a;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    padding: 1.8rem 2.8rem;
+
+}
+
+header>.logo {
+    width: 20%;
+}
+
+header>.logo>img {
+    width: 5rem;
+}
+
+header>nav {
+    position: absolute;
+    top: 2.6rem;
+    left: 27.5%;
+    margin: auto;
+    width: 45%;
+}
+
+header>nav>ul {
+    display: flex;
+    justify-content: center;
+    background: #ff9b30e3;
+    border-radius: 2rem;
+    align-items: center;
+    list-style: none;
+    height: 2.6rem;
+    padding: 0 1rem;
+}
+
+header>nav>ul>li {
+    margin: 0 2rem;
+    transition: all .4s;
+}
+
+header>nav>ul>li:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    min-height: 100vh;
+}
+
+.container>.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59.5%;
+    height: 110vh;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 110vh;
+    z-index: 1;
+    background-color: var(--primary-color)
+}
+.img > img{
+    height: 95%;
+    z-index: -2;
+}
+.container>.content {
+    margin: 6rem 2.8rem;
+}
+
+.container>.content>h1 {
+    font-size: 80px;
+    line-height: 64px;
+}
+
+.container>.content>h2 {
+    font-size: 80px;
+    line-height: 64px;
+    font-weight: 200;
+}
+
+.container>.content>p {
+    font-size: 1rem;
+    margin: 2rem 0;
+    width: 38%;
+}
+
+.container>.content .btn {
+    border: none;
+    padding: .7rem 1.3rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--primary-color);
+    transition: all .4s;
+}
+
+.container>.content .btn:hover {
+    background-color: #ffd857;
+    cursor: pointer;
+}
+
+.banners {
+    margin-top: -3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+
+}
+
+.banners>div {
+    width: 100%;
+    height: 14rem;
+    padding: 2.5rem;
+}
+
+.banner1 {
+    position: relative;
+    background-color: #ffd457;
+
+}
+
+.banner1>.banner1_content {
+    border-radius: 0 100% 0 0;
+    background: var(--primary-color);
+    position: absolute;
+    height: 135.5%;
+    width: 120%;
+    top: -5rem;
+    left: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem;
+    color: var(--text-dark);
+}
+
+.banner1_content>.content {
+    position: absolute;
+    top: 20;
+    left: 30%;
+}
+
+.banner1>.banner1_content>.content>h2 {
+    font-size: 94px;
+    line-height: 80px;
+}
+
+.banner1>.banner1_conten>.content t>h3 {
+    font-size: 24px;
+}
+
+.banner1>.banner1_content>.content>p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.banner2>h4,
+.banner3>h4,
+.banner4>h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.banner2>p,
+.banner3>p,
+.banner4>p {
+    font-size: 14px;
+}
+
+.banner2>a,
+.banner3>a,
+.banner4>a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 16px;
+}
+
+.banner2 {
+    background-color: #ffd457;
+}
+
+.banner3 {
+    background-color: #ffc823;
+}
+
+.banner4 {
+    background-color: #ffad23;
+}
